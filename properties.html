@@ -1,0 +1,1023 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/main.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="sass/main.scss">
+    <title>Gigaland - Properties</title>
+
+   <style>
+        section{
+            padding:60px 0;
+        }
+    </style>
+</head>
+<body>
+
+
+    <div class="topnav" style="border-bottom: 1px solid rgb(230, 230, 230);">
+        <div class="container">
+            <div class="row d-lg-flex d-none">
+                <div class="col-10 d-lg-flex d-none">
+                    <ul class="p-0 py-3 m-0">
+                        <li style="list-style-type: none; display: inline; padding-right: 30px; font-size: 16px;" class="text-muted"><i class="bi bi-envelope-fill px-2 h5 text-primary"></i>info@company.com</li>
+                        <li style="list-style-type: none; display: inline; font-size: 16px;" class="text-muted"><i class="bi bi-map-fill px-2 h5 text-primary"></i>Sunny Isles Beach, FL 33160</li>
+                    </ul>
+                </div>
+                <div class="col-2" style="align-content: center; text-align: end; display: flex;">
+                    <div class="social-icon rounded-circle">
+                        <i class="bi bi-facebook text-white"></i>
+                    </div>
+                    <div class="social-icon rounded-circle">
+                        <i class="bi bi-twitter text-white"></i>
+                    </div>
+                    <div class="social-icon rounded-circle">
+                        <i class="bi bi-linkedin text-white"></i>
+                    </div>
+                    <div class="social-icon rounded-circle">
+                        <i class="bi bi-instagram text-white"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container py-2">
+        <nav class="navbar navbar-expand-lg fixed-sticky">
+            <div class="container-fluid my-2">
+              <a class="navbar-brand" style="font-size: 25px; font-weight: bold; letter-spacing: 2px;" href="index.html">VILLA</a>
+              <form class="d-lg-flex d-none m-0 order-lg-3 rounded-pill" style="z-index:1;" id="con" role="search">
+                <button class="btn btn-blackk rounded-pill shed" style="padding:6px 25px 6px 35px;" type="submit">schedule a visit</button>
+              </form>
+              <div class=" d-lg-flex d-none schedule rounded-circle order-lg-2" style="justify-content: center; padding-top: 10px;">
+                <i class="bi bi-calendar-fill text-white"></i>
+            </div>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav mb-2 mb-lg-0 ">
+                  <li class="nav-item px-3">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item px-3">
+                    <a class="nav-link" href="properties.html">Properties</a>
+                  </li>
+                  <li class="nav-item px-3">
+                    <a class="nav-link " href="property-details.html">Property Details</a>
+                  </li>
+                  <li class="nav-item px-3">
+                    <a class="nav-link" href="contact-us.html">Contact Us</a>
+                  </li>
+                </ul>
+              </div>
+              
+            </div>
+          </nav>
+    </div>
+
+
+<div class="container-fluid">
+    <div class="row head">
+        <div class="col" style="height: 35vh;">
+            <div class="container" style="    text-align: center; padding-top: 5%;">
+                    <span class="breadcrumb mt-5 mt-md-0"><a href="index.html" style="color: black;">Home</a> / properties</span>
+                <div class="col-12 text-white" style="text-transform: uppercase;">
+                    <h1 class="display-2 fw-bold m-0">Properties</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<section class="py-5">
+    <div class="container py-5">
+        <div class="row">
+            <div class="nav-wrapper col-12 col-md-8 col-lg-12" style="    padding-top: 50px; padding-bottom: 50px;">
+                <ul class="nav nav-tabs" role="tablist" style="justify-content: center;">
+                    <li class="nav-item pb-2" role="presentation">
+                        <button class="nav-link active navvvvv" id="all-tab" data-bs-toggle="tab" data-bs-target="#all" type="button" role="tab"
+                        aria-controls="all" aria-selected="true">Show All</button>
+                    </li>
+                    <li class="nav-item pb-2" role="presentation">
+                        <button class="nav-link navvvvv" id="appartment-tab" data-bs-toggle="tab" data-bs-target="#appartment" type="button" role="tab"
+                        aria-controls="appartment" aria-selected="false">Appartment</button>
+                    </li>
+                    <li class="nav-item pb-2" role="presentation">
+                        <button class="nav-link navvvvv" id="villa-tab" data-bs-toggle="tab" data-bs-target="#villa" type="button" role="tab"
+                        aria-controls="villa" aria-selected="false" tabindex="-1">Villa House</button>
+                    </li>
+                    <li class="nav-item pb-2" role="presentation">
+                        <button class="nav-link navvvvv" id="pent-tab" data-bs-toggle="tab" data-bs-target="#pent" type="button" role="tab"
+                        aria-controls="pent" aria-selected="false" tabindex="-1">Penthouse</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane active show" id="all" role="tab-panel" aria-labelledby="all-tab">
+        
+                <div class="row" style="justify-content: center;">
+                    <div class="col-12 col-md-8 col-lg-4 mb-3">
+                        <div class="boxxxx" style="background-color: #f5f5f5; padding: 40px; border-radius:6px;">
+                            <a href="#"><img src="images/property-01.jpg" alt="property" style="border-radius: 6px;"></a>
+                            <h6 style="margin-top: 15px; padding: 3px 10px; width: 32%; background-color: #e0a684; border-radius: 6px;">Luxury Villa</h6>
+                            <h4 style="text-align: end; margin-top: -33px; color: #ec6211;">$2.264.000</h4>
+                            <h5 class="fw-bold pt-2">18 Old Street Miami, OR 97219</h5>
+                            <div class="row" style="height: 25px;">
+                            <div class="col-4" style="display: inline-block;">
+                                <p style="margin-top: 15px;" class="text-muted">Bedrooms: </p>
+                                <p style="text-align: end; margin-top: -39px;">8</p>
+                            </div>
+                            <div class="col-5" style="display: inline-block; text-align: center;">
+                                <p style="margin-top: 15px;" class="text-muted">Bathrooms: </p>
+                                <p style="text-align: end; margin-top: -39px;">8</p>
+                            </div>
+                            </div>
+                            <div class="row">
+                            <div class="col-4" style="display: inline-block; ">
+                                <p style="margin-top: 15px;" class="text-muted">Area: </p>
+                                <p style="text-align: end; margin-top: -39px;">545m<sup>2</sup></p>
+                            </div>
+                            <div class="col-3" style="display: inline-block; padding: 0;">
+                                <p style="margin-top: 15px;" class="text-muted">Floor: </p>
+                                <p style="text-align: end; margin-top: -39px;">3</p>
+                            </div>
+                            <div class="col-5" style="display: inline-block;">
+                                <p style="margin-top: 15px;" class="text-muted">Parking: </p>
+                                <p style="text-align: end; margin-top: -39px;">6 spots</p>
+                            </div>
+                            </div>
+                            <hr>
+                            <a href="property-details.html" class="btn btn-blackk rounded-pill properteeee"> Schedule a visit</a>
+                        </div>
+                    </div>
+        
+                    <div class="col-12 col-md-8 col-lg-4 mb-3">
+                        <div class="boxxxx" style="background-color: #f5f5f5; padding: 30px; border-radius:6px;">
+                            <a href="#"><img src="images/property-02.jpg" alt="property" style="border-radius: 6px;"></a>
+                            <h6 style="margin-top: 15px; padding: 3px 10px; width: 32%; background-color: #e0a684; border-radius: 6px;">Luxury Villa</h6>
+                            <h4 style="text-align: end; margin-top: -33px; color: #ec6211;">$1.180.000</h4>
+                            <h5 class="fw-bold pt-2">54 New Street Florida, OR 27001</h5>
+                            <div class="row" style="height: 25px;">
+                            <div class="col-4" style="display: inline-block;">
+                                <p style="margin-top: 15px;" class="text-muted">Bedrooms: </p>
+                                <p style="text-align: end; margin-top: -39px;">6</p>
+                            </div>
+                            <div class="col-5" style="display: inline-block; text-align: center;">
+                                <p style="margin-top: 15px;" class="text-muted">Bathrooms: </p>
+                                <p style="text-align: end; margin-top: -39px;">5</p>
+                            </div>
+                            </div>
+                            <div class="row">
+                            <div class="col-4" style="display: inline-block; ">
+                                <p style="margin-top: 15px;" class="text-muted">Area: </p>
+                                <p style="text-align: end; margin-top: -39px;">450m<sup>2</sup></p>
+                            </div>
+                            <div class="col-3" style="display: inline-block; padding: 0;">
+                                <p style="margin-top: 15px;" class="text-muted">Floor: </p>
+                                <p style="text-align: end; margin-top: -39px;">3</p>
+                            </div>
+                            <div class="col-5" style="display: inline-block;">
+                                <p style="margin-top: 15px;" class="text-muted">Parking: </p>
+                                <p style="text-align: end; margin-top: -39px;">8 spots</p>
+                            </div>
+                            </div>
+                            <hr>
+                            <a href="property-details.html" class="btn btn-blackk rounded-pill properteeee"> Schedule a visit</a>
+                        </div>
+                    </div>
+        
+                    <div class="col-12 col-md-8 col-lg-4 mb-3">
+                        <div class="boxxxx" style="background-color: #f5f5f5; padding: 40px; border-radius:6px;">
+                            <a href="#"><img src="images/property-03.jpg" alt="property" style="border-radius: 6px;"></a>
+                            <h6 style="margin-top: 15px; padding: 3px 10px; width: 32%; background-color: #e0a684; border-radius: 6px;">Luxury Villa</h6>
+                            <h4 style="text-align: end; margin-top: -33px; color: #ec6211;">$1.460.000</h4>
+                            <h5 class="fw-bold pt-2">26 Mid Street Portland, OR 38540</h5>
+                            <div class="row" style="height: 25px;">
+                            <div class="col-4" style="display: inline-block;">
+                                <p style="margin-top: 15px;" class="text-muted">Bedrooms: </p>
+                                <p style="text-align: end; margin-top: -39px;">5</p>
+                            </div>
+                            <div class="col-5" style="display: inline-block; text-align: center;">
+                                <p style="margin-top: 15px;" class="text-muted">Bathrooms: </p>
+                                <p style="text-align: end; margin-top: -39px;">4</p>
+                            </div>
+                            </div>
+                            <div class="row">
+                            <div class="col-4" style="display: inline-block; ">
+                                <p style="margin-top: 15px;" class="text-muted">Area: </p>
+                                <p style="text-align: end; margin-top: -39px;">225m<sup>2</sup></p>
+                            </div>
+                            <div class="col-3" style="display: inline-block; padding: 0;">
+                                <p style="margin-top: 15px;" class="text-muted">Floor: </p>
+                                <p style="text-align: end; margin-top: -39px;">3</p>
+                            </div>
+                            <div class="col-5" style="display: inline-block;">
+                                <p style="margin-top: 15px;" class="text-muted">Parking: </p>
+                                <p style="text-align: end; margin-top: -39px;">10 spots</p>
+                            </div>
+                            </div>
+                            <hr>
+                            <a href="property-details.html" class="btn btn-blackk rounded-pill properteeee"> Schedule a visit</a>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-8 col-lg-4 mb-3">
+                        <div class="boxxxx" style="background-color: #f5f5f5; padding: 40px; border-radius:6px;">
+                            <a href="#"><img src="images/property-04.jpg" alt="property" style="border-radius: 6px;"></a>
+                            <h6 style="margin-top: 15px; padding: 3px 10px; width: 32%; background-color: #e0a684; border-radius: 6px;">Apartment</h6>
+                            <h4 style="text-align: end; margin-top: -33px; color: #ec6211;">$584.500</h4>
+                            <h5 class="fw-bold pt-2">12 New Street Miami, OR 12650</h5>
+                            <div class="row" style="height: 25px;">
+                            <div class="col-4" style="display: inline-block;">
+                                <p style="margin-top: 15px;" class="text-muted">Bedrooms: </p>
+                                <p style="text-align: end; margin-top: -39px;">4</p>
+                            </div>
+                            <div class="col-5" style="display: inline-block; text-align: center;">
+                                <p style="margin-top: 15px;" class="text-muted">Bathrooms: </p>
+                                <p style="text-align: end; margin-top: -39px;">3</p>
+                            </div>
+                            </div>
+                            <div class="row">
+                            <div class="col-4" style="display: inline-block; ">
+                                <p style="margin-top: 15px;" class="text-muted">Area: </p>
+                                <p style="text-align: end; margin-top: -39px;">125m<sup>2</sup></p>
+                            </div>
+                            <div class="col-3" style="display: inline-block; padding: 0;">
+                                <p style="margin-top: 15px;" class="text-muted">Floor: </p>
+                                <p style="text-align: end; margin-top: -39px;">25th</p>
+                            </div>
+                            <div class="col-5" style="display: inline-block;">
+                                <p style="margin-top: 15px;" class="text-muted">Parking: </p>
+                                <p style="text-align: end; margin-top: -39px;">2 cars</p>
+                            </div>
+                            </div>
+                            <hr>
+                            <a href="property-details.html" class="btn btn-blackk rounded-pill properteeee"> Schedule a visit</a>
+                        </div>
+                    </div>
+        
+                    <div class="col-12 col-md-8 col-lg-4 mb-3">
+                        <div class="boxxxx" style="background-color: #f5f5f5; padding: 40px; border-radius:6px;">
+                            <a href="#"><img src="images/property-05.jpg" alt="property" style="border-radius: 6px;"></a>
+                            <h6 style="margin-top: 15px; padding: 3px 10px; width: 32%; background-color: #e0a684; border-radius: 6px;">Penthouse</h6>
+                            <h4 style="text-align: end; margin-top: -33px; color: #ec6211;">$925.600</h4>
+                            <h5 class="fw-bold pt-2">34 Hope Street Portland, OR 42680</h5>
+                            <div class="row" style="height: 25px;">
+                            <div class="col-4" style="display: inline-block;">
+                                <p style="margin-top: 15px;" class="text-muted">Bedrooms: </p>
+                                <p style="text-align: end; margin-top: -39px;">4</p>
+                            </div>
+                            <div class="col-5" style="display: inline-block; text-align: center;">
+                                <p style="margin-top: 15px;" class="text-muted">Bathrooms: </p>
+                                <p style="text-align: end; margin-top: -39px;">4</p>
+                            </div>
+                            </div>
+                            <div class="row">
+                            <div class="col-4" style="display: inline-block; ">
+                                <p style="margin-top: 15px;" class="text-muted">Area: </p>
+                                <p style="text-align: end; margin-top: -39px;">180m<sup>2</sup></p>
+                            </div>
+                            <div class="col-3" style="display: inline-block; padding: 0;">
+                                <p style="margin-top: 15px;" class="text-muted">Floor: </p>
+                                <p style="text-align: end; margin-top: -39px;">38th</p>
+                            </div>
+                            <div class="col-5" style="display: inline-block;">
+                                <p style="margin-top: 15px;" class="text-muted">Parking: </p>
+                                <p style="text-align: end; margin-top: -39px;">2 cars</p>
+                            </div>
+                            </div>
+                            <hr>
+                            <a href="property-details.html" class="btn btn-blackk rounded-pill properteeee"> Schedule a visit</a>
+                        </div>
+                    </div>
+        
+                    <div class="col-12 col-md-8 col-lg-4 mb-3">
+                        <div class="boxxxx" style="background-color: #f5f5f5; padding: 40px; border-radius:6px;">
+                            <a href="#"><img src="images/property-06.jpg" alt="property" style="border-radius: 6px;"></a>
+                            <h6 style="margin-top: 15px; padding: 3px 10px; width: 40%; background-color: #e0a684; border-radius: 6px;">Modern Condo</h6>
+                            <h4 style="text-align: end; margin-top: -33px; color: #ec6211;">$450.000</h4>
+                            <h5 class="fw-bold pt-2">22 Hope Street Portland, OR 16540</h5>
+                            <div class="row" style="height: 25px;">
+                            <div class="col-4" style="display: inline-block;">
+                                <p style="margin-top: 15px;" class="text-muted">Bedrooms: </p>
+                                <p style="text-align: end; margin-top: -39px;">3</p>
+                            </div>
+                            <div class="col-5" style="display: inline-block; text-align: center;">
+                                <p style="margin-top: 15px;" class="text-muted">Bathrooms: </p>
+                                <p style="text-align: end; margin-top: -39px;">2</p>
+                            </div>
+                            </div>
+                            <div class="row">
+                            <div class="col-4" style="display: inline-block; ">
+                                <p style="margin-top: 15px;" class="text-muted">Area: </p>
+                                <p style="text-align: end; margin-top: -39px;">165m<sup>2</sup></p>
+                            </div>
+                            <div class="col-3" style="display: inline-block; padding: 0;">
+                                <p style="margin-top: 15px;" class="text-muted">Floor: </p>
+                                <p style="text-align: end; margin-top: -39px;">26th</p>
+                            </div>
+                            <div class="col-5" style="display: inline-block;">
+                                <p style="margin-top: 15px;" class="text-muted">Parking: </p>
+                                <p style="text-align: end; margin-top: -39px;">3 cars</p>
+                            </div>
+                            </div>
+                            <hr>
+                            <a href="property-details.html" class="btn btn-blackk rounded-pill properteeee"> Schedule a visit</a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-8 col-lg-4 mb-3">
+                        <div class="boxxxx" style="background-color: #f5f5f5; padding: 40px; border-radius:6px;">
+                            <a href="#"><img src="images/property-01.jpg" alt="property" style="border-radius: 6px;"></a>
+                            <h6 style="margin-top: 15px; padding: 3px 10px; width: 32%; background-color: #e0a684; border-radius: 6px;">Luxury Villa</h6>
+                            <h4 style="text-align: end; margin-top: -33px; color: #ec6211;">$980.000</h4>
+                            <h5 class="fw-bold pt-2">14 Mid Street Miami, OR 36450</h5>
+                            <div class="row" style="height: 25px;">
+                            <div class="col-4" style="display: inline-block;">
+                                <p style="margin-top: 15px;" class="text-muted">Bedrooms: </p>
+                                <p style="text-align: end; margin-top: -39px;">8</p>
+                            </div>
+                            <div class="col-5" style="display: inline-block; text-align: center;">
+                                <p style="margin-top: 15px;" class="text-muted">Bathrooms: </p>
+                                <p style="text-align: end; margin-top: -39px;">8</p>
+                            </div>
+                            </div>
+                            <div class="row">
+                            <div class="col-4" style="display: inline-block; ">
+                                <p style="margin-top: 15px;" class="text-muted">Area: </p>
+                                <p style="text-align: end; margin-top: -39px;">550m<sup>2</sup></p>
+                            </div>
+                            <div class="col-3" style="display: inline-block; padding: 0;">
+                                <p style="margin-top: 15px;" class="text-muted">Floor: </p>
+                                <p style="text-align: end; margin-top: -39px;">3</p>
+                            </div>
+                            <div class="col-5" style="display: inline-block;">
+                                <p style="margin-top: 15px;" class="text-muted">Parking: </p>
+                                <p style="text-align: end; margin-top: -39px;">12 spots</p>
+                            </div>
+                            </div>
+                            <hr>
+                            <a href="property-details.html" class="btn btn-blackk rounded-pill properteeee"> Schedule a visit</a>
+                        </div>
+                    </div>
+        
+                    <div class="col-12 col-md-8 col-lg-4 mb-3">
+                        <div class="boxxxx" style="background-color: #f5f5f5; padding: 40px; border-radius:6px;">
+                            <a href="#"><img src="images/property-02.jpg" alt="property" style="border-radius: 6px;"></a>
+                            <h6 style="margin-top: 15px; padding: 3px 10px; width: 32%; background-color: #e0a684; border-radius: 6px;">Luxury Villa</h6>
+                            <h4 style="text-align: end; margin-top: -33px; color: #ec6211;">$1.520.000</h4>
+                            <h5 class="fw-bold pt-2">26 Old Street Miami, OR 12870</h5>
+                            <div class="row" style="height: 25px;">
+                            <div class="col-4" style="display: inline-block;">
+                                <p style="margin-top: 15px;" class="text-muted">Bedrooms: </p>
+                                <p style="text-align: end; margin-top: -39px;">12</p>
+                            </div>
+                            <div class="col-5" style="display: inline-block; text-align: center;">
+                                <p style="margin-top: 15px;" class="text-muted">Bathrooms: </p>
+                                <p style="text-align: end; margin-top: -39px;">15</p>
+                            </div>
+                            </div>
+                            <div class="row">
+                            <div class="col-4" style="display: inline-block; ">
+                                <p style="margin-top: 15px;" class="text-muted">Area: </p>
+                                <p style="text-align: end; margin-top: -39px;">380m<sup>2</sup></p>
+                            </div>
+                            <div class="col-3" style="display: inline-block; padding: 0;">
+                                <p style="margin-top: 15px;" class="text-muted">Floor: </p>
+                                <p style="text-align: end; margin-top: -39px;">3</p>
+                            </div>
+                            <div class="col-5" style="display: inline-block;">
+                                <p style="margin-top: 15px;" class="text-muted">Parking: </p>
+                                <p style="text-align: end; margin-top: -39px;">14 spots</p>
+                            </div>
+                            </div>
+                            <hr>
+                            <a href="property-details.html" class="btn btn-blackk rounded-pill properteeee"> Schedule a visit</a>
+                        </div>
+                    </div>
+        
+                    <div class="col-12 col-md-8 col-lg-4 mb-3">
+                        <div class="boxxxx" style="background-color: #f5f5f5; padding: 40px; border-radius:6px;">
+                            <a href="#"><img src="images/property-03.jpg" alt="property" style="border-radius: 6px;"></a>
+                            <h6 style="margin-top: 15px; padding: 3px 10px; width: 32%; background-color: #e0a684; border-radius: 6px;">Luxury Villa</h6>
+                            <h4 style="text-align: end; margin-top: -33px; color: #ec6211;">$3.145.000</h4>
+                            <h5 class="fw-bold pt-2">34 New Street Miami, OR 24650</h5>
+                            <div class="row" style="height: 25px;">
+                            <div class="col-4" style="display: inline-block;">
+                                <p style="margin-top: 15px;" class="text-muted">Bedrooms: </p>
+                                <p style="text-align: end; margin-top: -39px;">10</p>
+                            </div>
+                            <div class="col-5" style="display: inline-block; text-align: center;">
+                                <p style="margin-top: 15px;" class="text-muted">Bathrooms: </p>
+                                <p style="text-align: end; margin-top: -39px;">12</p>
+                            </div>
+                            </div>
+                            <div class="row">
+                            <div class="col-4" style="display: inline-block; ">
+                                <p style="margin-top: 15px;" class="text-muted">Area: </p>
+                                <p style="text-align: end; margin-top: -39px;">860m<sup>2</sup></p>
+                            </div>
+                            <div class="col-3" style="display: inline-block; padding: 0;">
+                                <p style="margin-top: 15px;" class="text-muted">Floor: </p>
+                                <p style="text-align: end; margin-top: -39px;">3</p>
+                            </div>
+                            <div class="col-5" style="display: inline-block;">
+                                <p style="margin-top: 15px;" class="text-muted">Parking: </p>
+                                <p style="text-align: end; margin-top: -39px;">10 spots</p>
+                            </div>
+                            </div>
+                            <hr>
+                            <a href="property-details.html" class="btn btn-blackk rounded-pill properteeee"> Schedule a visit</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-pane" id="appartment" role="tab-panel" aria-labelledby="appartment-tab">
+        
+                <div class="row">
+                    <div class="col-12 col-md-8 col-lg-4 mb-3">
+                        <div class="boxxxx" style="background-color: #f5f5f5; padding: 40px; border-radius:6px;">
+                            <a href="#"><img src="images/property-01.jpg" alt="property" style="border-radius: 6px;"></a>
+                            <h6 style="margin-top: 15px; padding: 3px 10px; width: 32%; background-color: #e0a684; border-radius: 6px;">Luxury Villa</h6>
+                            <h4 style="text-align: end; margin-top: -33px; color: #ec6211;">$2.264.000</h4>
+                            <h5 class="fw-bold pt-2">18 Old Street Miami, OR 97219</h5>
+                            <div class="row" style="height: 25px;">
+                            <div class="col-4" style="display: inline-block;">
+                                <p style="margin-top: 15px;" class="text-muted">Bedrooms: </p>
+                                <p style="text-align: end; margin-top: -39px;">8</p>
+                            </div>
+                            <div class="col-5" style="display: inline-block; text-align: center;">
+                                <p style="margin-top: 15px;" class="text-muted">Bathrooms: </p>
+                                <p style="text-align: end; margin-top: -39px;">8</p>
+                            </div>
+                            </div>
+                            <div class="row">
+                            <div class="col-4" style="display: inline-block; ">
+                                <p style="margin-top: 15px;" class="text-muted">Area: </p>
+                                <p style="text-align: end; margin-top: -39px;">545m<sup>2</sup></p>
+                            </div>
+                            <div class="col-3" style="display: inline-block; padding: 0;">
+                                <p style="margin-top: 15px;" class="text-muted">Floor: </p>
+                                <p style="text-align: end; margin-top: -39px;">3</p>
+                            </div>
+                            <div class="col-5" style="display: inline-block;">
+                                <p style="margin-top: 15px;" class="text-muted">Parking: </p>
+                                <p style="text-align: end; margin-top: -39px;">6 spots</p>
+                            </div>
+                            </div>
+                            <hr>
+                            <a href="property-details.html" class="btn btn-blackk rounded-pill properteeee"> Schedule a visit</a>
+                        </div>
+                    </div>
+        
+                    <div class="col-12 col-md-8 col-lg-4 mb-3">
+                        <div class="boxxxx" style="background-color: #f5f5f5; padding: 40px; border-radius:6px;">
+                            <a href="#"><img src="images/property-03.jpg" alt="property" style="border-radius: 6px;"></a>
+                            <h6 style="margin-top: 15px; padding: 3px 10px; width: 32%; background-color: #e0a684; border-radius: 6px;">Luxury Villa</h6>
+                            <h4 style="text-align: end; margin-top: -33px; color: #ec6211;">$1.460.000</h4>
+                            <h5 class="fw-bold pt-2">26 Mid Street Portland, OR 38540</h5>
+                            <div class="row" style="height: 25px;">
+                            <div class="col-4" style="display: inline-block;">
+                                <p style="margin-top: 15px;" class="text-muted">Bedrooms: </p>
+                                <p style="text-align: end; margin-top: -39px;">5</p>
+                            </div>
+                            <div class="col-5" style="display: inline-block; text-align: center;">
+                                <p style="margin-top: 15px;" class="text-muted">Bathrooms: </p>
+                                <p style="text-align: end; margin-top: -39px;">4</p>
+                            </div>
+                            </div>
+                            <div class="row">
+                            <div class="col-4" style="display: inline-block; ">
+                                <p style="margin-top: 15px;" class="text-muted">Area: </p>
+                                <p style="text-align: end; margin-top: -39px;">225m<sup>2</sup></p>
+                            </div>
+                            <div class="col-3" style="display: inline-block;padding: 0; ">
+                                <p style="margin-top: 15px;" class="text-muted">Floor: </p>
+                                <p style="text-align: end; margin-top: -39px;">3</p>
+                            </div>
+                            <div class="col-5" style="display: inline-block;">
+                                <p style="margin-top: 15px;" class="text-muted">Parking: </p>
+                                <p style="text-align: end; margin-top: -39px;">10 spots</p>
+                            </div>
+                            </div>
+                            <hr>
+                            <a href="property-details.html" class="btn btn-blackk rounded-pill properteeee"> Schedule a visit</a>
+                        </div>
+                    </div>
+        
+                    <div class="col-12 col-md-8 col-lg-4 mb-3">
+                        <div class="boxxxx" style="background-color: #f5f5f5; padding: 40px; border-radius:6px;">
+                            <a href="#"><img src="images/property-06.jpg" alt="property" style="border-radius: 6px;"></a>
+                            <h6 style="margin-top: 15px; padding: 3px 10px; width: 40%; background-color: #e0a684; border-radius: 6px;">Modern Condo</h6>
+                            <h4 style="text-align: end; margin-top: -33px; color: #ec6211;">$450.000</h4>
+                            <h5 class="fw-bold pt-2">22 Hope Street Portland, OR 16540</h5>
+                            <div class="row" style="height: 25px;">
+                            <div class="col-4" style="display: inline-block;">
+                                <p style="margin-top: 15px;" class="text-muted">Bedrooms: </p>
+                                <p style="text-align: end; margin-top: -39px;">3</p>
+                            </div>
+                            <div class="col-5" style="display: inline-block; text-align: center;">
+                                <p style="margin-top: 15px;" class="text-muted">Bathrooms: </p>
+                                <p style="text-align: end; margin-top: -39px;">2</p>
+                            </div>
+                            </div>
+                            <div class="row">
+                            <div class="col-4" style="display: inline-block; ">
+                                <p style="margin-top: 15px;" class="text-muted">Area: </p>
+                                <p style="text-align: end; margin-top: -39px;">165m<sup>2</sup></p>
+                            </div>
+                            <div class="col-3" style="display: inline-block; padding: 0;">
+                                <p style="margin-top: 15px;" class="text-muted">Floor: </p>
+                                <p style="text-align: end; margin-top: -39px;">26th</p>
+                            </div>
+                            <div class="col-5" style="display: inline-block;">
+                                <p style="margin-top: 15px;" class="text-muted">Parking: </p>
+                                <p style="text-align: end; margin-top: -39px;">3 cars</p>
+                            </div>
+                            </div>
+                            <hr>
+                            <a href="property-details.html" class="btn btn-blackk rounded-pill properteeee"> Schedule a visit</a>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-8 col-lg-4 mb-3">
+                        <div class="boxxxx" style="background-color: #f5f5f5; padding: 40px; border-radius:6px;">
+                            <a href="#"><img src="images/property-02.jpg" alt="property" style="border-radius: 6px;"></a>
+                            <h6 style="margin-top: 15px; padding: 3px 10px; width: 32%; background-color: #e0a684; border-radius: 6px;">Luxury Villa</h6>
+                            <h4 style="text-align: end; margin-top: -33px; color: #ec6211;">$1.520.000</h4>
+                            <h5 class="fw-bold pt-2">26 Old Street Miami, OR 12870</h5>
+                            <div class="row" style="height: 25px;">
+                            <div class="col-4" style="display: inline-block;">
+                                <p style="margin-top: 15px;" class="text-muted">Bedrooms: </p>
+                                <p style="text-align: end; margin-top: -39px;">12</p>
+                            </div>
+                            <div class="col-5" style="display: inline-block; text-align: center;">
+                                <p style="margin-top: 15px;" class="text-muted">Bathrooms: </p>
+                                <p style="text-align: end; margin-top: -39px;">15</p>
+                            </div>
+                            </div>
+                            <div class="row">
+                            <div class="col-4" style="display: inline-block; ">
+                                <p style="margin-top: 15px;" class="text-muted">Area: </p>
+                                <p style="text-align: end; margin-top: -39px;">380m<sup>2</sup></p>
+                            </div>
+                            <div class="col-3" style="display: inline-block;padding: 0; ">
+                                <p style="margin-top: 15px;" class="text-muted">Floor: </p>
+                                <p style="text-align: end; margin-top: -39px;">3</p>
+                            </div>
+                            <div class="col-5" style="display: inline-block;">
+                                <p style="margin-top: 15px;" class="text-muted">Parking: </p>
+                                <p style="text-align: end; margin-top: -39px;">14 spots</p>
+                            </div>
+                            </div>
+                            <hr>
+                            <a href="property-details.html" class="btn btn-blackk rounded-pill properteeee"> Schedule a visit</a>
+                        </div>
+                    </div>
+        
+                    <div class="col-12 col-md-8 col-lg-4 mb-3">
+                        <div class="boxxxx" style="background-color: #f5f5f5; padding: 40px; border-radius:6px;">
+                            <a href="#"><img src="images/property-01.jpg" alt="property" style="border-radius: 6px;"></a>
+                            <h6 style="margin-top: 15px; padding: 3px 10px; width: 32%; background-color: #e0a684; border-radius: 6px;">Luxury Villa</h6>
+                            <h4 style="text-align: end; margin-top: -33px; color: #ec6211;">$3.145.000</h4>
+                            <h5 class="fw-bold pt-2">34 New Street Miami, OR 24650</h5>
+                            <div class="row" style="height: 25px;">
+                            <div class="col-4" style="display: inline-block;">
+                                <p style="margin-top: 15px;" class="text-muted">Bedrooms: </p>
+                                <p style="text-align: end; margin-top: -39px;">10</p>
+                            </div>
+                            <div class="col-5" style="display: inline-block; text-align: center;">
+                                <p style="margin-top: 15px;" class="text-muted">Bathrooms: </p>
+                                <p style="text-align: end; margin-top: -39px;">12</p>
+                            </div>
+                            </div>
+                            <div class="row">
+                            <div class="col-4" style="display: inline-block; ">
+                                <p style="margin-top: 15px;" class="text-muted">Area: </p>
+                                <p style="text-align: end; margin-top: -39px;">860m<sup>2</sup></p>
+                            </div>
+                            <div class="col-3" style="display: inline-block;padding: 0; ">
+                                <p style="margin-top: 15px;" class="text-muted">Floor: </p>
+                                <p style="text-align: end; margin-top: -39px;">3</p>
+                            </div>
+                            <div class="col-5" style="display: inline-block;">
+                                <p style="margin-top: 15px;" class="text-muted">Parking: </p>
+                                <p style="text-align: end; margin-top: -39px;">10 spots</p>
+                            </div>
+                            </div>
+                            <hr>
+                            <a href="property-details.html" class="btn btn-blackk rounded-pill properteeee"> Schedule a visit</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-pane" id="villa" role="tab-panel" aria-labelledby="villa-tab">
+        
+                <div class="row">
+                    <div class="col-12 col-md-8 col-lg-4 mb-3">
+                        <div class="boxxxx" style="background-color: #f5f5f5; padding: 40px; border-radius:6px;">
+                            <a href="#"><img src="images/property-02.jpg" alt="property" style="border-radius: 6px;"></a>
+                            <h6 style="margin-top: 15px; padding: 3px 10px; width: 32%; background-color: #e0a684; border-radius: 6px;">Luxury Villa</h6>
+                            <h4 style="text-align: end; margin-top: -33px; color: #ec6211;">$1.180.000</h4>
+                            <h5 class="fw-bold pt-2">54 New Street Florida, OR 27001</h5>
+                            <div class="row" style="height: 25px;">
+                            <div class="col-4" style="display: inline-block;">
+                                <p style="margin-top: 15px;" class="text-muted">Bedrooms: </p>
+                                <p style="text-align: end; margin-top: -39px;">6</p>
+                            </div>
+                            <div class="col-5" style="display: inline-block; text-align: center;">
+                                <p style="margin-top: 15px;" class="text-muted">Bathrooms: </p>
+                                <p style="text-align: end; margin-top: -39px;">5</p>
+                            </div>
+                            </div>
+                            <div class="row">
+                            <div class="col-4" style="display: inline-block; ">
+                                <p style="margin-top: 15px;" class="text-muted">Area: </p>
+                                <p style="text-align: end; margin-top: -39px;">450m<sup>2</sup></p>
+                            </div>
+                            <div class="col-3" style="display: inline-block; padding: 0;">
+                                <p style="margin-top: 15px;" class="text-muted">Floor: </p>
+                                <p style="text-align: end; margin-top: -39px;">3</p>
+                            </div>
+                            <div class="col-5" style="display: inline-block;">
+                                <p style="margin-top: 15px;" class="text-muted">Parking: </p>
+                                <p style="text-align: end; margin-top: -39px;">8 spots</p>
+                            </div>
+                            </div>
+                            <hr>
+                            <a href="property-details.html" class="btn btn-blackk rounded-pill properteeee"> Schedule a visit</a>
+                        </div>
+                    </div>
+        
+                    <div class="col-12 col-md-8 col-lg-4 mb-3">
+                        <div class="boxxxx" style="background-color: #f5f5f5; padding: 40px; border-radius:6px;">
+                            <a href="#"><img src="images/property-04.jpg" alt="property" style="border-radius: 6px;"></a>
+                            <h6 style="margin-top: 15px; padding: 3px 10px; width: 32%; background-color: #e0a684; border-radius: 6px;">Apartment</h6>
+                            <h4 style="text-align: end; margin-top: -33px; color: #ec6211;">$584.500</h4>
+                            <h5 class="fw-bold pt-2">12 Hope Street Portland, OR 12650</h5>
+                            <div class="row" style="height: 25px;">
+                            <div class="col-4" style="display: inline-block;">
+                                <p style="margin-top: 15px;" class="text-muted">Bedrooms: </p>
+                                <p style="text-align: end; margin-top: -39px;">4</p>
+                            </div>
+                            <div class="col-5" style="display: inline-block; text-align: center;">
+                                <p style="margin-top: 15px;" class="text-muted">Bathrooms: </p>
+                                <p style="text-align: end; margin-top: -39px;">3</p>
+                            </div>
+                            </div>
+                            <div class="row">
+                            <div class="col-4" style="display: inline-block; ">
+                                <p style="margin-top: 15px;" class="text-muted">Area: </p>
+                                <p style="text-align: end; margin-top: -39px;">125m<sup>2</sup></p>
+                            </div>
+                            <div class="col-3" style="display: inline-block;padding: 0; ">
+                                <p style="margin-top: 15px;" class="text-muted">Floor: </p>
+                                <p style="text-align: end; margin-top: -39px;">25th</p>
+                            </div>
+                            <div class="col-5" style="display: inline-block;">
+                                <p style="margin-top: 15px;" class="text-muted">Parking: </p>
+                                <p style="text-align: end; margin-top: -39px;">2 cars</p>
+                            </div>
+                            </div>
+                            <hr>
+                            <a href="property-details.html" class="btn btn-blackk rounded-pill properteeee"> Schedule a visit</a>
+                        </div>
+                    </div>
+        
+                    <div class="col-12 col-md-8 col-lg-4 mb-3">
+                        <div class="boxxxx" style="background-color: #f5f5f5; padding: 40px; border-radius:6px;">
+                            <a href="#"><img src="images/property-05.jpg" alt="property" style="border-radius: 6px;"></a>
+                            <h6 style="margin-top: 15px; padding: 3px 10px; width: 30%; background-color: #e0a684; border-radius: 6px;">Penthouse</h6>
+                            <h4 style="text-align: end; margin-top: -33px; color: #ec6211;">$925.600</h4>
+                            <h5 class="fw-bold pt-2">34 Hope Street Portland, OR 42680</h5>
+                            <div class="row" style="height: 25px;">
+                            <div class="col-4" style="display: inline-block;">
+                                <p style="margin-top: 15px;" class="text-muted">Bedrooms: </p>
+                                <p style="text-align: end; margin-top: -39px;">4</p>
+                            </div>
+                            <div class="col-5" style="display: inline-block; text-align: center;">
+                                <p style="margin-top: 15px;" class="text-muted">Bathrooms: </p>
+                                <p style="text-align: end; margin-top: -39px;">4</p>
+                            </div>
+                            </div>
+                            <div class="row">
+                            <div class="col-4" style="display: inline-block; ">
+                                <p style="margin-top: 15px;" class="text-muted">Area: </p>
+                                <p style="text-align: end; margin-top: -39px;">180m<sup>2</sup></p>
+                            </div>
+                            <div class="col-3" style="display: inline-block; padding: 0;">
+                                <p style="margin-top: 15px;" class="text-muted">Floor: </p>
+                                <p style="text-align: end; margin-top: -39px;">38th</p>
+                            </div>
+                            <div class="col-5" style="display: inline-block;">
+                                <p style="margin-top: 15px;" class="text-muted">Parking: </p>
+                                <p style="text-align: end; margin-top: -39px;">2 cars</p>
+                            </div>
+                            </div>
+                            <hr>
+                            <a href="property-details.html" class="btn btn-blackk rounded-pill properteeee"> Schedule a visit</a>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-8 col-lg-4 mb-3">
+                        <div class="boxxxx" style="background-color: #f5f5f5; padding: 40px; border-radius:6px;">
+                            <a href="#"><img src="images/property-03.jpg" alt="property" style="border-radius: 6px;"></a>
+                            <h6 style="margin-top: 15px; padding: 3px 10px; width: 32%; background-color: #e0a684; border-radius: 6px;">Luxury Villa</h6>
+                            <h4 style="text-align: end; margin-top: -33px; color: #ec6211;">$980.000</h4>
+                            <h5 class="fw-bold pt-2">14 Mid Street Miami, OR 36450</h5>
+                            <div class="row" style="height: 25px;">
+                            <div class="col-4" style="display: inline-block;">
+                                <p style="margin-top: 15px;" class="text-muted">Bedrooms: </p>
+                                <p style="text-align: end; margin-top: -39px;">8</p>
+                            </div>
+                            <div class="col-5" style="display: inline-block; text-align: center;">
+                                <p style="margin-top: 15px;" class="text-muted">Bathrooms: </p>
+                                <p style="text-align: end; margin-top: -39px;">8</p>
+                            </div>
+                            </div>
+                            <div class="row">
+                            <div class="col-4" style="display: inline-block; ">
+                                <p style="margin-top: 15px;" class="text-muted">Area: </p>
+                                <p style="text-align: end; margin-top: -39px;">550m<sup>2</sup></p>
+                            </div>
+                            <div class="col-3" style="display: inline-block;padding: 0; ">
+                                <p style="margin-top: 15px;" class="text-muted">Floor: </p>
+                                <p style="text-align: end; margin-top: -39px;">3</p>
+                            </div>
+                            <div class="col-5" style="display: inline-block;">
+                                <p style="margin-top: 15px;" class="text-muted">Parking: </p>
+                                <p style="text-align: end; margin-top: -39px;">12 spots</p>
+                            </div>
+                            </div>
+                            <hr>
+                            <a href="property-details.html" class="btn btn-blackk rounded-pill properteeee"> Schedule a visit</a>
+                        </div>
+                    </div>
+        
+                </div>
+            </div>
+
+            <div class="tab-pane" id="pent" role="tab-panel" aria-labelledby="pent-tab">
+        
+                <div class="row" style="justify-content: center;">
+                    <div class="col-12 col-md-8 col-lg-4 mb-3">
+                        <div class="boxxxx" style="background-color: #f5f5f5; padding: 40px; border-radius:6px;">
+                            <a href="#"><img src="images/property-03.jpg" alt="property" style="border-radius: 6px;"></a>
+                            <h6 style="margin-top: 15px; padding: 3px 10px; width: 32%; background-color: #e0a684; border-radius: 6px;">Luxury Villa</h6>
+                            <h4 style="text-align: end; margin-top: -33px; color: #ec6211;">$1.460.000</h4>
+                            <h5 class="fw-bold pt-2">26 Mid Street Portland, OR 38540</h5>
+                            <div class="row" style="height: 25px;">
+                            <div class="col-4" style="display: inline-block;">
+                                <p style="margin-top: 15px;" class="text-muted">Bedrooms: </p>
+                                <p style="text-align: end; margin-top: -39px;">5</p>
+                            </div>
+                            <div class="col-5" style="display: inline-block; text-align: center;">
+                                <p style="margin-top: 15px;" class="text-muted">Bathrooms: </p>
+                                <p style="text-align: end; margin-top: -39px;">4</p>
+                            </div>
+                            </div>
+                            <div class="row">
+                            <div class="col-4" style="display: inline-block; ">
+                                <p style="margin-top: 15px;" class="text-muted">Area: </p>
+                                <p style="text-align: end; margin-top: -39px;">225m<sup>2</sup></p>
+                            </div>
+                            <div class="col-3" style="display: inline-block; padding: 0;">
+                                <p style="margin-top: 15px;" class="text-muted">Floor: </p>
+                                <p style="text-align: end; margin-top: -39px;">3</p>
+                            </div>
+                            <div class="col-5" style="display: inline-block;">
+                                <p style="margin-top: 15px;" class="text-muted">Parking: </p>
+                                <p style="text-align: end; margin-top: -39px;">10 spots</p>
+                            </div>
+                            </div>
+                            <hr>
+                            <a href="property-details.html" class="btn btn-blackk rounded-pill properteeee"> Schedule a visit</a>
+                        </div>
+                    </div>
+        
+                    <div class="col-12 col-md-8 col-lg-4 mb-3">
+                        <div class="boxxxx" style="background-color: #f5f5f5; padding: 30px; border-radius:6px;">
+                            <a href="#"><img src="images/property-05.jpg" alt="property" style="border-radius: 6px;"></a>
+                            <h6 style="margin-top: 15px; padding: 3px 10px; width: 32%; background-color: #e0a684; border-radius: 6px;">Penthouse</h6>
+                            <h4 style="text-align: end; margin-top: -33px; color: #ec6211;">$925.600</h4>
+                            <h5 class="fw-bold pt-2">34 Hope Street Portland, OR 42680</h5>
+                            <div class="row" style="height: 25px;">
+                            <div class="col-4" style="display: inline-block;">
+                                <p style="margin-top: 15px;" class="text-muted">Bedrooms: </p>
+                                <p style="text-align: end; margin-top: -39px;">4</p>
+                            </div>
+                            <div class="col-5" style="display: inline-block; text-align: center;">
+                                <p style="margin-top: 15px;" class="text-muted">Bathrooms: </p>
+                                <p style="text-align: end; margin-top: -39px;">4</p>
+                            </div>
+                            </div>
+                            <div class="row">
+                            <div class="col-4" style="display: inline-block; ">
+                                <p style="margin-top: 15px;" class="text-muted">Area: </p>
+                                <p style="text-align: end; margin-top: -39px;">180m<sup>2</sup></p>
+                            </div>
+                            <div class="col-3" style="display: inline-block; padding: 0;">
+                                <p style="margin-top: 15px;" class="text-muted">Floor: </p>
+                                <p style="text-align: end; margin-top: -39px;">38th</p>
+                            </div>
+                            <div class="col-5" style="display: inline-block;">
+                                <p style="margin-top: 15px;" class="text-muted">Parking: </p>
+                                <p style="text-align: end; margin-top: -39px;">2 cars</p>
+                            </div>
+                            </div>
+                            <hr>
+                            <a href="property-details.html" class="btn btn-blackk rounded-pill properteeee"> Schedule a visit</a>
+                        </div>
+                    </div>
+        
+                    <div class="col-12 col-md-8 col-lg-4 mb-3">
+                        <div class="boxxxx" style="background-color: #f5f5f5; padding: 40px; border-radius:6px;">
+                            <a href="#"><img src="images/property-06.jpg" alt="property" style="border-radius: 6px;"></a>
+                            <h6 style="margin-top: 15px; padding: 3px 10px; width: 40%; background-color: #e0a684; border-radius: 6px;">Modern Condo</h6>
+                            <h4 style="text-align: end; margin-top: -33px; color: #ec6211;">$450.000</h4>
+                            <h5 class="fw-bold pt-2">22 Hope Street Portland, OR 16540</h5>
+                            <div class="row" style="height: 25px;">
+                            <div class="col-4" style="display: inline-block;">
+                                <p style="margin-top: 15px;" class="text-muted">Bedrooms: </p>
+                                <p style="text-align: end; margin-top: -39px;">3</p>
+                            </div>
+                            <div class="col-5" style="display: inline-block; text-align: center;">
+                                <p style="margin-top: 15px;" class="text-muted">Bathrooms: </p>
+                                <p style="text-align: end; margin-top: -39px;">2</p>
+                            </div>
+                            </div>
+                            <div class="row">
+                            <div class="col-4" style="display: inline-block; ">
+                                <p style="margin-top: 15px;" class="text-muted">Area: </p>
+                                <p style="text-align: end; margin-top: -39px;">165m<sup>2</sup></p>
+                            </div>
+                            <div class="col-3" style="display: inline-block; padding: 0;">
+                                <p style="margin-top: 15px;" class="text-muted">Floor: </p>
+                                <p style="text-align: end; margin-top: -39px;">26th</p>
+                            </div>
+                            <div class="col-5" style="display: inline-block;">
+                                <p style="margin-top: 15px;" class="text-muted">Parking: </p>
+                                <p style="text-align: end; margin-top: -39px;">3 cars</p>
+                            </div>
+                            </div>
+                            <hr>
+                            <a href="property-details.html" class="btn btn-blackk rounded-pill properteeee"> Schedule a visit</a>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-8 col-lg-4 mb-3">
+                        <div class="boxxxx" style="background-color: #f5f5f5; padding: 40px; border-radius:6px;">
+                            <a href="#"><img src="images/property-03.jpg" alt="property" style="border-radius: 6px;"></a>
+                            <h6 style="margin-top: 15px; padding: 3px 10px; width: 32%; background-color: #e0a684; border-radius: 6px;">Luxury Villa</h6>
+                            <h4 style="text-align: end; margin-top: -33px; color: #ec6211;">$980.000</h4>
+                            <h5 class="fw-bold pt-2">14 Mid Street Miami, OR 36450</h5>
+                            <div class="row" style="height: 25px;">
+                            <div class="col-5" style="display: inline-block;">
+                                <p style="margin-top: 15px;" class="text-muted">Bedrooms: </p>
+                                <p style="text-align: end; margin-top: -39px;">8</p>
+                            </div>
+                            <div class="col-4" style="display: inline-block; text-align: center;">
+                                <p style="margin-top: 15px;" class="text-muted">Bathrooms: </p>
+                                <p style="text-align: end; margin-top: -39px;">8</p>
+                            </div>
+                            </div>
+                            <div class="row">
+                            <div class="col-4" style="display: inline-block; ">
+                                <p style="margin-top: 15px;" class="text-muted">Area: </p>
+                                <p style="text-align: end; margin-top: -39px;">550m<sup>2</sup></p>
+                            </div>
+                            <div class="col-3" style="display: inline-block; padding: 0;">
+                                <p style="margin-top: 15px;" class="text-muted">Floor: </p>
+                                <p style="text-align: end; margin-top: -39px;">3</p>
+                            </div>
+                            <div class="col-5" style="display: inline-block;">
+                                <p style="margin-top: 15px;" class="text-muted">Parking: </p>
+                                <p style="text-align: end; margin-top: -39px;">12 spots</p>
+                            </div>
+                            </div>
+                            <hr>
+                            <a href="property-details.html" class="btn btn-blackk rounded-pill properteeee"> Schedule a visit</a>
+                        </div>
+                    </div>
+        
+                    <div class="col-12 col-md-8 col-lg-4 mb-3">
+                        <div class="boxxxx" style="background-color: #f5f5f5; padding: 40px; border-radius:6px;">
+                            <a href="#"><img src="images/property-02.jpg" alt="property" style="border-radius: 6px;"></a>
+                            <h6 style="margin-top: 15px; padding: 3px 10px; width: 32%; background-color: #e0a684; border-radius: 6px;">Luxury Villa</h6>
+                            <h4 style="text-align: end; margin-top: -33px; color: #ec6211;">$1.520.000</h4>
+                            <h5 class="fw-bold pt-2">26 Old Street Miami, OR 12870</h5>
+                            <div class="row" style="height: 25px;">
+                            <div class="col-4" style="display: inline-block;">
+                                <p style="margin-top: 15px;" class="text-muted">Bedrooms: </p>
+                                <p style="text-align: end; margin-top: -39px;">12</p>
+                            </div>
+                            <div class="col-5" style="display: inline-block; text-align: center;">
+                                <p style="margin-top: 15px;" class="text-muted">Bathrooms: </p>
+                                <p style="text-align: end; margin-top: -39px;">15</p>
+                            </div>
+                            </div>
+                            <div class="row">
+                            <div class="col-4" style="display: inline-block; ">
+                                <p style="margin-top: 15px;" class="text-muted">Area: </p>
+                                <p style="text-align: end; margin-top: -39px;">380m<sup>2</sup></p>
+                            </div>
+                            <div class="col-3" style="display: inline-block; padding: 0;">
+                                <p style="margin-top: 15px;" class="text-muted">Floor: </p>
+                                <p style="text-align: end; margin-top: -39px;">3</p>
+                            </div>
+                            <div class="col-5" style="display: inline-block;">
+                                <p style="margin-top: 15px;" class="text-muted">Parking: </p>
+                                <p style="text-align: end; margin-top: -39px;">14 spots</p>
+                            </div>
+                            </div>
+                            <hr>
+                            <a href="property-details.html" class="btn btn-blackk rounded-pill properteeee"> Schedule a visit</a>
+                        </div>
+                    </div>
+        
+                    <div class="col-12 col-md-8 col-lg-4 mb-3">
+                        <div class="boxxxx" style="background-color: #f5f5f5; padding: 40px; border-radius:6px;">
+                            <a href="#"><img src="images/property-01.jpg" alt="property" style="border-radius: 6px;"></a>
+                            <h6 style="margin-top: 15px; padding: 3px 10px; width: 32%; background-color: #e0a684; border-radius: 6px;">Luxury Villa</h6>
+                            <h4 style="text-align: end; margin-top: -33px; color: #ec6211;">$3.145.000</h4>
+                            <h5 class="fw-bold pt-2">34 New Street Miami, OR 24650</h5>
+                            <div class="row" style="height: 25px;">
+                            <div class="col-4" style="display: inline-block;">
+                                <p style="margin-top: 15px;" class="text-muted">Bedrooms: </p>
+                                <p style="text-align: end; margin-top: -39px;">10</p>
+                            </div>
+                            <div class="col-5" style="display: inline-block; text-align: center;">
+                                <p style="margin-top: 15px;" class="text-muted">Bathrooms: </p>
+                                <p style="text-align: end; margin-top: -39px;">12</p>
+                            </div>
+                            </div>
+                            <div class="row">
+                            <div class="col-4" style="display: inline-block; ">
+                                <p style="margin-top: 15px;" class="text-muted">Area: </p>
+                                <p style="text-align: end; margin-top: -39px;">860m<sup>2</sup></p>
+                            </div>
+                            <div class="col-3" style="display: inline-block; padding: 0;">
+                                <p style="margin-top: 15px;" class="text-muted">Floor: </p>
+                                <p style="text-align: end; margin-top: -39px;">3</p>
+                            </div>
+                            <div class="col-5" style="display: inline-block;">
+                                <p style="margin-top: 15px;" class="text-muted">Parking: </p>
+                                <p style="text-align: end; margin-top: -39px;">10 spots</p>
+                            </div>
+                            </div>
+                            <hr>
+                            <a href="property-details.html" class="btn btn-blackk rounded-pill properteeee"> Schedule a visit</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 col-md-8 col-lg-12" style="padding-top: 80px; padding-bottom: 50px; text-align: center;">
+            <a href="#" class="nextt"><i class="bi bi-1-circle-fill h1"></i></a>
+            <a href="#" class="nextttt"><i class="bi bi-2-circle-fill h1"></i></a>
+            <a href="#" class="nextt"><i class="bi bi-3-circle-fill h1"></i></a>
+            <a href="#" class="nextt"><i class="bi bi-arrow-right-circle-fill h1"></i></a>
+        </div>
+    </div>
+</section>
+
+
+<div class="footer bg-blackk">
+    <div class="container" style="padding: 40px;">
+        <p class="text-white fw-bold" style="text-align: center;">Copyright © 2048 Villa Agency Co., Ltd. All rights reserved. Design: TemplateMo</p>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script>
+    const tooltips = document.querySelectorAll('.tt')
+    tooltips.forEach(t => {
+        new bootstrap.Tooltip(t)
+    })
+</script>
+</body>
+</html> 
